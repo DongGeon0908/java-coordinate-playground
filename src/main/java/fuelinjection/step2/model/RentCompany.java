@@ -1,4 +1,4 @@
-package fuelinjection.step1.model;
+package fuelinjection.step2.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,5 +26,5 @@ public class RentCompany {
                 .map(c -> c.getName() + SEPARATOR + (int) c.getChargeQuantity() + LITER)
                 .collect(Collectors.joining(NEWLINE));
     }
-    
+
 }

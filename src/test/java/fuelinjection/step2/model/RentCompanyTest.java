@@ -1,4 +1,4 @@
-package fuelinjection.step1.model;
+package fuelinjection.step2.model;
 
 import org.junit.jupiter.api.Test;
 
