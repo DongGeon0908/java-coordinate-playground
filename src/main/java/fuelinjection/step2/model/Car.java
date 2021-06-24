@@ -4,7 +4,16 @@ package fuelinjection.step2.model;
 // 인터페이스에서는 public abstract가 꼭 필요~
 public interface Car {
 
-    public abstract String getName();
 
-    public abstract double getChargeQuantity();
+    String getName();
+
+
+    double getChargeQuantity();
+    /*
+    double getDistancePerLiter();
+    double getTripDistance();
+    default double getChargeQuantity() { // 템플릿 메서드 패턴 -> 값은 다르지만, 공통적인 계산이나, 행동을 취할 경우 사용하기 -> 필요한 이유에 대해 명확하게 설명할 수 있어야함!!
+        return getTripDistance() / getDistancePerLiter();
+    }
+     */
 }

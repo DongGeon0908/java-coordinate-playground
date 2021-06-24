@@ -10,13 +10,14 @@ public class RentCompanyTest {
 
     @Test
     public void report() throws Exception {
+        // 팩토리 메서드로 다시 만들어서 해보기
         RentCompany company = RentCompany.create(); // factory method를 사용해 생성
         company.addCar(new Sonata(150));
         company.addCar(new K5(260));
         company.addCar(new Sonata(120));
         company.addCar(new Avante(300));
         company.addCar(new K5(390));
-
+// 자동차 자체에 대한 테스트케이스
         String report = company.generateReport();
         assertThat(report).isEqualTo(
                 "Sonata : 15리터" + NEWLINE +

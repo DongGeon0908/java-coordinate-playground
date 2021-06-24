@@ -12,6 +12,7 @@ public class RentCompany {
     private final List<Car> cars = new ArrayList<>();
 
     // 생성자를 없애고 메서드로 RentComapny를 만드는게 팩토리 메서드인지 궁금합니다.
+    // https://johngrib.github.io/wiki/static-factory-method-pattern/
     public static RentCompany create() {
         return new RentCompany();
     }
